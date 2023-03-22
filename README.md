@@ -1,8 +1,8 @@
 # did:web generation sample using GitHub Pages
 
 This repository provides a simplified process for creating your own
-[decentralized identifier (or DID)](did-core), using [the `did:web`
-method](did-method-web). It generates a new key pair and creates a DID
+[decentralized identifier (or DID)][did-core], using [the `did:web`
+method][did-method-web]. It generates a new key pair and creates a DID
 document which uses the public key as an `assertionMethod`.
 
 The document will be hosted on GitHub pages, and the DID will have the
