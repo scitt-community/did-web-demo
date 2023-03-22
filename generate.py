@@ -103,6 +103,7 @@ def main():
     kid = "#" + key_fingerprint(public_key)
 
     print(f"Creating a new DID document for `{did}`...")
+    print(f"Key ID: `{kid}`")
 
     document = {
         "id": did,
@@ -120,12 +121,12 @@ def main():
         ],
     }
 
-    with open("docs/did.json", "w") as f:
+    with open("did.json", "w") as f:
         json.dump(document, f, indent=2)
 
-    subprocess.run(["git", "add", "docs/did.json"], check=True)
+    subprocess.run(["git", "add", "did.json"], check=True)
 
-    p = subprocess.run(["git", "diff-index", "--quiet", "HEAD", "docs/did.json"])
+    p = subprocess.run(["git", "diff-index", "--quiet", "HEAD", "did.json"])
     if p.returncode > 0:
         print("Committing the DID document...")
         subprocess.run(
@@ -134,7 +135,7 @@ def main():
                 "commit",
                 "--quiet",
                 "--allow-empty",
-                "docs/did.json",
+                "did.json",
                 "-m",
                 "Updating DID document",
             ],
