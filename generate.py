@@ -144,9 +144,8 @@ def main():
 
     print("Done!")
     print("Run `git push` to publish the new DID document to GitHub")
-    print(
-        f"After pushing, you may check its status at https://dev.uniresolver.io/#{did}"
-    )
+    print(f"After pushing, you may check its status at https://dev.uniresolver.io/#{did}")
+    print(f"Note that it can take a few minutes after pushing for the GitHub pages to be deployed")
 
 
 main()
