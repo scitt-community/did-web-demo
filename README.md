@@ -42,7 +42,8 @@ form `did:web:github.io:USERNAME:did-web-demo`.
 
 The instructions above should work on macOS and any Linux distribution, or any
 other POSIX-like environment. Windows users can run the `generate.sh` using
-WSL. Additionally, a Python 3 interpreter must be installed.
+WSL. Additionally, the git command and a Python 3 interpreter must be
+available.
 
 [did-core]: https://www.w3.org/TR/did-core/
 [did-method-web]: https://w3c-ccg.github.io/did-method-web/
